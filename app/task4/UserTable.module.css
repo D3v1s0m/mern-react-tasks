@@ -1,0 +1,112 @@
+.userTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.userTable th,
+.userTable td {
+    padding: 10px;
+    text-align: center;
+}
+
+.userTable thead {
+    background-color: #007bff;
+    color: white;
+}
+
+.userTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.userTable tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.userTable tr:hover {
+    background-color: #c7e1ff;
+}
+
+.profilePic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.userTable th {
+    background-color: #007bff;
+    color: white;
+}
+
+.userTable tbody tr:hover {
+    background-color: #c7e1ff;
+}
+
+.userTable td {
+    border: 1px solid #e0e0e0;
+}
+
+.userTable a {
+    text-decoration: none;
+    /* Remove underline */
+    color: inherit;
+    /* Use the default text color */
+    cursor: default;
+    /* Change the cursor on hover to indicate it's not a link */
+}
+
+.userTable a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.loading {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+    padding: 20px;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.popupContent {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.popupContent img {
+    max-width: 100%;
+    height: auto;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.closeButton:hover {
+    background: #0056b3;
+}

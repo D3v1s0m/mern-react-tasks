@@ -1,0 +1,74 @@
+/* Portfolio.module.css */
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+.portfolioItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 800px;
+}
+
+.portfolioItem {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: calc(33.33% - 20px);
+}
+
+.portfolioItem h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.portfolioItem p {
+    margin: 10px 0;
+}
+
+.portfolioItem a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+.githubStats {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.skills {
+    text-align: center;
+    margin: 0;
+}
+
+.skillImages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    width: 40px;
+    height: auto;
+}
+
+.skill img {
+    max-width: 100%;
+    height: auto;
+}

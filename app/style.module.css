@@ -1,0 +1,38 @@
+.backButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.backButton:hover {
+  background-color: #0056b3;
+}
+
+.taskList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+
+.taskLink {
+  margin: 10px;
+  color: #007bff;
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: text-decoration 0.3s;
+}
+
+.taskLink:hover {
+  text-decoration: underline;
+}
