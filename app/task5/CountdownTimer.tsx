@@ -13,13 +13,13 @@ export default function CountdownTimer(props: CountdownTimerProps) {
       setTimeLeft(props.targetTime - Date.now());
     }, 1000);
     return () => clearTimeout(timer);
-  }, []);
+  }, [props, timeLeft]);
 
   useEffect(() => {
     if (timeLeft <= 0) {
       props.onTimerEnd();
     }
-  }, []);
+  }, [props, timeLeft]);
 
   const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
   const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
