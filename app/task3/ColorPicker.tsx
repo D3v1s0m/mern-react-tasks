@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './color-picker.module.css';
 
 interface ColorPickerProps {
@@ -21,9 +21,13 @@ const rgbToHex = (rgb : String) => {
 
 
 export default function ColorPicker({ colors }: ColorPickerProps) {
-    const pageBackgroundColor = window.getComputedStyle(document.body).backgroundColor;
+    useEffect(() => {
+        // This code runs on the client side and has access to window and document.
+        const pageBackgroundColor = window.getComputedStyle(document.body).backgroundColor;
+        setSelectedColor(rgbToHex(pageBackgroundColor));
+    }, []);
     const [isOpen, setIsOpen] = useState(true);
-    const [selectedColor, setSelectedColor] = useState<string | null>(rgbToHex(pageBackgroundColor));
+    const [selectedColor, setSelectedColor] = useState<string | null>("#FFFFFF");
 
     const toggleColorList = () => {
         setIsOpen(!isOpen);
