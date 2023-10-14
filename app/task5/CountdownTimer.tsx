@@ -13,7 +13,7 @@ export default function CountdownTimer(props: CountdownTimerProps) {
       setTimeLeft(props.targetTime - Date.now());
     }, 1000);
     return () => clearTimeout(timer);
-  });
+  }, [timeLeft]);
 
   useEffect(() => {
     if (timeLeft <= 0) {

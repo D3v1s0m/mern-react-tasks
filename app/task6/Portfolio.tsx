@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Portfolio.module.css';
 import GithubStats from './GithubStats';
+import Image from 'next/image';
 
 export default function Portfolio() {
     const portfolioItems = [
@@ -67,7 +68,7 @@ export default function Portfolio() {
                 <div className={styles.skillImages}>
                     {skills.map((skill, index) => (
                         <div key={index} className={styles.skill}>
-                            <img src={`/images/${skill.image}`} alt={skill.name} />
+                            <Image width="40" height="40" src={`/images/${skill.image}`} alt={skill.name} />
                         </div>
                     ))}
                 </div>

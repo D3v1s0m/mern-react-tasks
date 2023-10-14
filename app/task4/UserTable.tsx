@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react';
 import styles from './UserTable.module.css';
+import Image from 'next/image';
 
 interface User {
     id: number;
@@ -87,7 +88,9 @@ export default function UserTable() {
                             <td>{user.id}</td>
                             <td>
                                 <div className={styles.profilePicContainer}>
-                                    <img
+                                    <Image
+                                        width={50}
+                                        height={50}
                                         src={user.image}
                                         alt={`${user.firstName}'s Profile Pic`}
                                         className={styles.profilePic}
