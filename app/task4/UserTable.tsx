@@ -17,6 +17,7 @@ interface User {
 }
 
 export default function UserTable() {
+    /* eslint-disable @next/next/no-img-element */
     const [users, setUsers] = useState<User[]>([]);
     const [loading, setLoading] = useState(true);
     const [popupImage, setPopupImage] = useState<string | null>(null);
