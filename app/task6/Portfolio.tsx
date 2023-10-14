@@ -8,20 +8,20 @@ export default function Portfolio() {
         {
             title: 'MERN - HTML CSS',
             description: 'MERN Tasks related to HTML and CSS.',
-            displayLink: 'https://example.com/project1',
-            sourceLink: 'https://example.com/project1',
+            displayLink: 'https://d3v1s0m.github.io/MERN-HTML-CSS/',
+            sourceLink: 'https://github.com/D3v1s0m/MERN-HTML-CSS',
         },
         {
             title: 'MERN - BS and JS',
             description: 'MERN Tasks related to Bootstrap and JavaScript.',
-            displayLink: 'https://example.com/project2',
-            sourceLink: 'https://example.com/project2',
+            displayLink: 'https://d3v1s0m.github.io/MERN-BS-JS/',
+            sourceLink: 'https://github.com/D3v1s0m/MERN-BS-JS',
         },
         {
             title: 'MERN - React',
             description: 'MERN Tasks related to React.',
-            displayLink: 'https://example.com/project3',
-            sourceLink: 'https://example.com/project3',
+            displayLink: 'https://mern-react-tasks.vercel.app',
+            sourceLink: 'https://github.com/D3v1s0m/mern-react-tasks',
         },
     ];
 
